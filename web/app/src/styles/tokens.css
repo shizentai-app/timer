@@ -1,0 +1,72 @@
+/* Design tokens — palette per FAMILY.md. Carmine accent, warm-paper neutrals. */
+
+:root {
+  --paper-basement: #FFFFFF;
+  --paper: #FAF7F2;
+  --paper-2: #F2EDE4;
+  --paper-3: #E8E1D3;
+  --ink: #1A1A1A;
+  --ink-2: #4A4A48;
+  --ink-3: #8A867E;
+  --line: #DCD4C2;
+  --line-2: #C8BFA8;
+  --hairline: rgba(26, 26, 26, 0.08);
+
+  --accent: #8B1818;
+  --accent-soft: #F4E2E2;
+  --accent-ink: #5C1010;
+
+  --gold: #C8A24B;
+  --gold-soft: #F5EBD2;
+
+  /* Dojo emerald — disciplined, not playground-Material green. */
+  --phase-work: #1B5E20;
+  --phase-warning: #C8A24B;
+  --phase-rest: #8B1818;
+  --phase-prepare: #1A1A1A;
+  --phase-finished: #1A1A1A;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 24px;
+
+  --shadow-1: 0 1px 2px rgba(26, 26, 26, 0.05);
+  --shadow-2: 0 4px 16px rgba(26, 26, 26, 0.06);
+
+  --bottomnav-h: 64px;
+  --content-max: 720px;
+}
+
+/* Dark palette per shizentai/docs/THEME.md — carmine-tinted, not neutral black.
+   Shifted from warm-neutral (#14130F/#1C1B17) to a red-shifted hierarchy so the
+   brand is present even on empty screens, and surface levels read as depth
+   instead of all blending into one near-black. */
+[data-theme="dark"] {
+  --paper-basement: #0F0A0A;
+  --paper: #1A1212;
+  --paper-2: #241818;
+  --paper-3: #2E1F1F;
+  --ink: #F4EFE3;
+  --ink-2: #B8B2A2;
+  --ink-3: #807B6E;
+  --line: #4A3434;
+  --line-2: #5A4040;
+  --hairline: rgba(244, 239, 227, 0.08);
+
+  --accent: #A52828;
+  --accent-soft: #2E1414;
+  --accent-ink: #E8B5B5;
+
+  --gold: #D4B45F;
+  --gold-soft: #2E2613;
+
+  --phase-work: #2E7D32;
+  --phase-warning: #D4B45F;
+  --phase-rest: #A52828;
+  --phase-prepare: #1A1212;
+  --phase-finished: #1A1212;
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 4px 16px rgba(0, 0, 0, 0.5);
+}

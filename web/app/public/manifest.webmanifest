@@ -1,0 +1,13 @@
+{
+  "name": "Shizentai Timer",
+  "short_name": "Timer",
+  "description": "Інтервал-таймер для тренувань — кармін на тілі, кандзі 自 на циферблаті.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#8B1818",
+  "theme_color": "#8B1818",
+  "icons": [
+    { "src": "/shizentai_timer_256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "/shizentai_timer_512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

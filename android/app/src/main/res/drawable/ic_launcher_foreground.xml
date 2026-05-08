@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 自 kanji + 270° progress arc, ported from brand/shizentai_timer.svg.
+     The arc is the differentiator from the parent Shizentai icon, so it
+     needs to read at small launcher sizes (~48dp). Two adjustments vs.
+     the brand SVG:
+       1. Outer 0.65 scale around (512, 512) keeps the arc strictly inside
+          the adaptive-icon safe zone (66dp inscribed in the 108dp canvas),
+          so circular and squircle launcher masks don't crop it.
+       2. Arc stroke widened to 56 (vs. 22 in the print SVG) so the line
+          is ~3dp on a typical xxhdpi launcher tile rather than ~1.5dp. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <group
+        android:pivotX="512"
+        android:pivotY="512"
+        android:scaleX="0.65"
+        android:scaleY="0.65">
+        <!-- Progress arc: 270° clockwise, 12 → 9 o'clock. -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="56"
+            android:strokeLineCap="round"
+            android:pathData="M 512 72 A 440 440 0 1 1 72 512"/>
+        <!-- 自 kanji centered at (512, 504), scale 0.55, Y inverted to match SVG glyph coordinates. -->
+        <group
+            android:translateX="512"
+            android:translateY="504">
+            <group
+                android:scaleX="0.55"
+                android:scaleY="-0.55">
+                <group
+                    android:translateX="-529"
+                    android:translateY="-381">
+                    <path
+                        android:fillColor="#FFFFFF"
+                        android:fillType="evenOdd"
+                        android:pathData="M709 641V458H303V641ZM426 849C422 798 413 725 402 670H312L181 723V-87H201C253 -87 303 -57 303 -42V-8H709V-83H728C773 -83 832 -56 834 -46V619C856 623 870 633 877 642L758 736L699 670H444C491 710 537 759 568 797C591 798 602 807 605 820ZM303 430H709V241H303ZM303 213H709V20H303Z"/>
+                </group>
+            </group>
+        </group>
+    </group>
+</vector>
